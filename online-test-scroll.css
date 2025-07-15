@@ -159,7 +159,7 @@ body {
 
 .result-message {
   text-align: center;
-  font-size: 17px;
+  font-size: 18px;
   font-weight: bold;
   color: #009999;
   margin-top: 10px;
@@ -168,6 +168,7 @@ body {
 .feedback {
   font-weight: bold;
   margin-top: 10px;
+  margin-bottom: 13px;
   padding: 3px;
   border-radius: 0;
   text-align: center;
