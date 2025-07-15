@@ -189,17 +189,17 @@ body {
 }
 
 .analysis-card {
+  background: #ffffff;
   border: 1px solid #ddd;
-  padding: 6px;
   margin-bottom: 20px;
   margin-top: 20px;
-  border-radius: 5px;
   font-size: 15px;
 }
 
 .analysis-card .option {
+  background: #f2f2f2;
   margin: 10px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 15px;
   padding: 8px;
