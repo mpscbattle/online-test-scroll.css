@@ -3,14 +3,15 @@
 * {
   font-family: 'Poppins', sans-serif !important;
 }
+
 body {
   font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
-.quiz-box {
+.quiz-box, .report-card, .analysis-card {
   max-width: 100%;
   margin: 10px auto;
   background: #ffffff;
@@ -67,7 +68,6 @@ body {
 }
 
 .question-card {
-  background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 5px;
@@ -75,8 +75,8 @@ body {
 }
 
 .question-number-circle {
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   background-color: #000099;
   color: white;
@@ -84,14 +84,15 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  font-size: 10px;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .question {
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
-margin-top: 10px;
 }
 
 .options .option {
@@ -104,13 +105,16 @@ margin-top: 10px;
   cursor: pointer;
   transition: background 0.3s ease;
 }
+
 .option.selected {
   background-color: #80bdff !important;
 }
+
 .option.correct {
   background-color: #339966;
   color: white;
 }
+
 .option.wrong {
   background-color: #cc3300;
   color: white;
@@ -131,19 +135,10 @@ margin-top: 10px;
   background-color: #2e2eb8;
   color: white;
 }
+
 .btn-black {
   background-color: #000;
   color: white;
-}
-
-.report-card, .analysis-card {
-  max-width: 100%;
-width: 100%;
-  margin: 20px auto;
-  background: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  display: none;
 }
 
 .report-grid {
@@ -162,28 +157,38 @@ width: 100%;
   border-radius: 5px;
 }
 
+.result-message {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #009999;
+  margin-top: 10px;
+}
+
 .feedback {
   font-weight: bold;
   margin-top: 10px;
   padding: 3px;
+  border-radius: 0;
   text-align: center;
-  border-radius: 0px;
 }
 
 .correct-feedback {
   background-color: #00994d;
   color: white;
 }
+
 .wrong-feedback {
   background-color: #b30000;
   color: white;
 }
+
 .not-attempted-feedback {
   background-color: #66c2ff;
   color: white;
 }
 
-.analysis-box {
+.analysis-card {
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   padding: 6px;
@@ -193,19 +198,10 @@ width: 100%;
   font-size: 15px;
 }
 
-.analysis-box .option {
+.analysis-card .option {
   margin: 10px 0;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 15px;
   padding: 8px;
 }
-
-.result-message {
-  text-align: center;
-  font-size: 17px;
-  font-weight: bold;
-  color: #009999;
-  margin-top: 10px;
-}
-
