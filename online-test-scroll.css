@@ -170,17 +170,17 @@ body {
   margin-top: 10px;
   margin-bottom: 13px;
   padding: 3px;
-  border-radius: 5px;
+  border-radius: 0px;
   text-align: center;
 }
 
 .correct-feedback {
-  background-color: #00e673;
+  background-color: #80ffbf;
   color: white;
 }
 
 .wrong-feedback {
-  background-color: #ff4d4d;
+  background-color: #ff9999;
   color: white;
 }
 
@@ -201,7 +201,7 @@ body {
 
 
  .analysis-box .question {
-  font-size: 27px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -219,10 +219,11 @@ body {
 /* New style for explanation box */
 .explanation-box {
   background-color: #e6e6ff; /* Light blue background */
-  border: 1px solid #9999ff; /* Blue border */
+  
   padding: 8px;
   margin-top: 10px;
-  border-radius: 5px;
+  margin-bottom: 10px;
+  border-radius: 0px;
   font-size: 14px;
   color: #333366; /* Darker blue text */
   font-weight: normal;
