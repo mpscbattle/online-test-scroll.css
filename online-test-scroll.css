@@ -170,7 +170,7 @@ body {
   margin-top: 10px;
   margin-bottom: 13px;
   padding: 3px;
-  border-radius: 0;
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -216,8 +216,14 @@ body {
   transition: background 0.3s ease;
 }
 
-    
-    
-
-    
-  
+/* New style for explanation box */
+.explanation-box {
+  background-color: #e6e6ff; /* Light blue background */
+  border: 1px solid #9999ff; /* Blue border */
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #333366; /* Darker blue text */
+  font-weight: normal;
+}
