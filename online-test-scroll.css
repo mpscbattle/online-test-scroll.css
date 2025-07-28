@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
-* {
-  font-family: 'Poppins', sans-serif !important;
-}
 
 body {
-  font-family: 'Poppins', sans-serif;
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
@@ -51,6 +45,7 @@ body {
   margin-top: 15px;
   border: none;
 }
+
 .onlineTestBtn {
   background-color: #b34700;
   color: white;
@@ -71,28 +66,23 @@ body {
   border-radius: 0px;
   padding: 5px;
   margin-bottom: 20px;
-  
 }
 
-.question-number-circle {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #000099;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* NEW: Style for "X out of Y" numbering */
+.question-number-text {
+  font-size: 14px; /* Adjust as needed */
   font-weight: bold;
-  font-size: 12px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  color: #008080;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: left; /* Align to left */
 }
+
 .question {
   font-size: 17px;
   font-weight: bold;
-  margin-bottom: 10px;
-  
+  margin-bottom: 15px;
+  margin-tpo: 5px;
 }
 
 .options .option {
@@ -185,7 +175,7 @@ body {
 }
 
 .not-attempted-feedback {
-  background-color: #7979d2;
+  background-color: #bbbb77;
   color: white;
 }
 
@@ -199,8 +189,7 @@ body {
   padding-right: 8px;
 }
 
-
- .analysis-box .question {
+.analysis-box .question {
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -219,12 +208,11 @@ body {
 /* New style for explanation box */
 .explanation-box {
   background-color: #e6e6ff; /* Light blue background */
-  
   padding: 8px;
   margin-top: 10px;
   margin-bottom: 10px;
   border-radius: 0px;
-  font-size: 14px;
+  font-size: 15px;
   color: #333366; /* Darker blue text */
   font-weight: normal;
 }
