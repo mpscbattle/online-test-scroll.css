@@ -1,5 +1,6 @@
 
 body {
+  
   background-color: #f0f0f0;
   margin: 0;
   padding: 0;
@@ -21,41 +22,43 @@ body {
   margin-bottom: 15px;
 }
 
-.timer,
-.startBtn,
-.onlineTestBtn { /* Apply common styles to all three buttons */
+.timer {
+  background-color: #00b386;
   color: white;
   padding: 3px 6px;
   border-radius: 5px;
   font-weight: bold;
   font-size: 14px;
-  border: none;
-  cursor: pointer; /* Ensure cursor is pointer for all buttons */
-  text-align: center; /* Center the text inside */
-  box-sizing: border-box; /* Include padding in width/height */
-
-  /* Fixed width and height for perfect consistency */
-  width: 95px; /* Adjust this value as needed, find a width that fits "Start Test" well */
-  height: 30px; /* Adjust this value as needed to match your desired height */
-  display: flex; /* Use flexbox internally to center content for height */
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0; /* Prevent shrinking in flex container */
+  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
-.timer {
-  background-color: #00b386;
-  /* Removed individual margin-bottom/top as it's handled by quiz-header */
-}
 .startBtn {
   background-color: #00b386;
-  /* Removed float: right; as flexbox handles alignment */
-  /* Removed individual margin-bottom/top as it's handled by quiz-header */
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  border: none;
 }
 .onlineTestBtn {
   background-color: #b34700;
-  /* Removed float: right; as flexbox handles alignment */
-  /* Removed individual margin-bottom/top as it's handled by quiz-header */
+  color: white;
+  display: inline-block;
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  float: right;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  border: none;
 }
 
 .question-card {
@@ -63,23 +66,28 @@ body {
   border-radius: 0px;
   padding: 5px;
   margin-bottom: 20px;
+  
 }
 
-/* NEW: Style for "X out of Y" numbering */
-.question-number-text {
-  font-size: 14px; /* Adjust as needed */
+.question-number-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #000099;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: bold;
-  color: #008080;
+  font-size: 12px;
   margin-bottom: 10px;
   margin-top: 10px;
-  text-align: left; /* Align to left */
 }
-
 .question {
   font-size: 17px;
   font-weight: bold;
-  margin-bottom: 15px;
-  margin-tpo: 5px;
+  margin-bottom: 10px;
+  
 }
 
 .options .option {
@@ -172,7 +180,7 @@ body {
 }
 
 .not-attempted-feedback {
-  background-color: #bbbb77;
+  background-color: #ffbf80;
   color: white;
 }
 
@@ -186,7 +194,8 @@ body {
   padding-right: 10px;
 }
 
-.analysis-box .question {
+
+ .analysis-box .question {
   font-size: 17px;
   font-weight: bold;
   margin-bottom: 10px;
@@ -205,6 +214,7 @@ body {
 /* New style for explanation box */
 .explanation-box {
   background-color: #e6e6ff; /* Light blue background */
+  
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
